@@ -16,6 +16,28 @@ class SwapiService {
     const users = await this.getResource('/people/');
     return users.results;
   }
+
+  getUser (id) {
+    return this.getResource(`/people/${id}`);
+  }
+
+  async getPlanets () {
+    const planets = await this.getResource('/planets/');
+    return planets.results;
+  }
+
+  getPlanet (id) {
+    return this.getResource(`/planets/${id}`);
+  }
+
+  async getStarShips () {
+    const planets = await this.getResource('/starships/');
+    return planets.results;
+  }
+
+  getStarShip (id) {
+    return this.getResource(`/starships/${id}`);
+  }
 }
 
 export default SwapiService;

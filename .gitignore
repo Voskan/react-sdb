@@ -1,3 +1,4 @@
 build
 .ide
 .vscode
+node_modules

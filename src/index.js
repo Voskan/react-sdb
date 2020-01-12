@@ -3,9 +3,6 @@ import ReactDOM from 'react-dom';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import SwapiService from './services/SwapiService';
+import App from './components/App';
 
-const users = new SwapiService();
-console.log(users.getUsers());
-
-ReactDOM.render(<h1>Hello</h1>, document.getElementById('root'));
+ReactDOM.render(<App />, document.getElementById('root'));
